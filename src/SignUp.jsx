@@ -1,74 +1,4 @@
-// import Button from "@mui/material/Button";
-// import TextField from "@mui/material/TextField";
-// import Card from '@mui/material/Card';
-// import { Typography } from "@mui/material";
-// import { useState } from "react";
-// import localStorage from 'localStorage';
-// // import { json } from "react-router-dom";
-// function SignUp() {
-//   const [email,setEmail] = useState("");
-//   const [password,setPassword] = useState("");
-//   return (
-//     <div>
-//         <div>
 
-//       <center>
-        
-//         <div
-//           style={{
-//             paddingTop: 150,
-//             marginBottom: 10,
-//           }}
-//         >
-//             <Typography>
-//           welcome signup here
-//           </Typography>
-//         </div>
-//       </center>
-
-//       <center>
-//         <Card variant="outlined"
-//           style={{
-//             // border: "2px solid black",
-//             width: 250,
-//             padding : 20
-//           }}
-//         >
-//           <TextField onChange={(e) =>{
-//             setEmail(e.target.value)
-//           }}  label="email" variant="standard" />
-//           <br />
-//           <TextField onChange={(e) => {
-//             setPassword(e.target.value)
-//           }} label="password" variant="standard" />
-//           <br />
-
-//           <Button href="#text-buttons" onClick={() => {
-//             // let username= document.getElementById("username").value
-//             // let password = document.getElementById("password").value
-//             // console.log(username.value);
-//             // console.log(password.value);
-//             fetch("http://localhost:3000/admin/signup" , {
-//               method : "POST",
-//               body:JSON.stringify({
-//                 username: email,
-//                 password: password,
-//               }),
-//               headers: {
-//                 "Content-Type": "application/json"
-//               },
-//             })
-         
-//           }}>Sign up</Button>
-//         </Card>
-//       </center>
-//         </div>
-
-//     </div>
-//   );
-// }
-
-// export default SignUp;
 
 
 
@@ -83,6 +13,7 @@ function SignUp() {
   const [password, setPassword] = useState("");
 
   const handleSignUp = async () => {
+    
     try {
       const response = await fetch("http://localhost:3000/admin/signup", {
         method: "POST",

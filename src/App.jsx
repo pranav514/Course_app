@@ -27,7 +27,8 @@ function App() {
     return (
        <div style={{
   width: '100vm',
-  height : '100vh',
+  height: '100vh',
+  minheight: '100%',
   backgroundColor : "#eeeeee"
 }}> 
     <AppBar></AppBar>    
